@@ -10,11 +10,14 @@ app.get('/', (req, res) => {
 
 app.get('/api/data', (req, res) => {
   const data = {
-    message: 'This is some sample data from the API',
+    message: 'This is some sample data from the mac',
     timestamp: new Date()
+
   };
   res.json(data);
 });
+
+
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
